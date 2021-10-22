@@ -19,30 +19,30 @@
     $reg = $search->fetch_object();
 ?>
 <body class="body">
-<div class="box">
-  <form action="user-edit.php" method="POST">
-  <div class="login-card">
-        <h1>Edit User</h1>
-        <br>
-        <label>User:</label>
-        <input class="input" type="text" name="usuario" id="usuario" size="10" maxlength="10" readonly value="<?php echo $reg->usuario?>">  
-        <br>
-        <Label>Name:</Label>
-        <input class="input" type="text" name="nome" id="nome" size="30" maxlength="30" value="<?php echo $reg->nome?>"> 
-        <br>
-        <label> Type: </label>
-        <input class="input" type="text" name="tipo" id="tipo" readonly value="<?php echo $reg->tipo?>">
-        <br>
-        <label> Password: </label>
-        <input class="input" type="password" name="senha1" id="senha1" size="8" maxlength="8">
-        <label> Confirm Password</label>
-        <input class="input" type="password" name="senha2" id="senha2" size="8" maxlength="8">
-        <br><br>
-        <input class="button" type="submit" value="Save"></input>
-        <br>
-        <?php echo back(); ?>
+    <div class="box">
+        <form action="user-edit.php" method="POST">
+            <div class="login-card">
+                    <h1>Edit User</h1>
+                    <br>
+                    <label>User:</label>
+                    <input class="input" type="text" name="usuario" id="usuario" size="10" maxlength="10" readonly value="<?php echo $reg->usuario?>">  
+                    <br>
+                    <Label>Name:</Label>
+                    <input class="input" type="text" name="nome" id="nome" size="30" maxlength="30" value="<?php echo $reg->nome?>"> 
+                    <br>
+                    <label> Type: </label>
+                    <input class="input" type="text" name="tipo" id="tipo" readonly value="<?php echo $reg->tipo?>">
+                    <br>
+                    <label> Password: </label>
+                    <input class="input" type="password" name="senha1" id="senha1" size="8" maxlength="8">
+                    <label> Confirm Password</label>
+                    <input class="input" type="password" name="senha2" id="senha2" size="8" maxlength="8">
+                    <br><br>
+                    <input class="button" type="submit" value="Save"></input>
+                    <br>
+                    <?php echo back(); ?>
+            </div>
+        </form>
     </div>
-  </form>
-</div>
 </body>
 </html>

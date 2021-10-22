@@ -95,13 +95,11 @@
                 echo "<td scope='row'>$res->genero</td>";
                 echo "<td scope='row'>$res->produtora</td>";
                 if(is_admin()){
-                  echo "<td><i class='material-icons'>edit</i>";
+                  echo "<td><a href='game-edit-form.php?cod=$res->cod'><i class='material-icons'>edit</i></a>";
                   echo " <td><i class='material-icons'>delete</i>";
                 } elseif(is_editor()){
-                  echo "<td><i class='material-icons'>edit</i>";
-                }
-                
-                    
+                  echo "<td><a href='game-edit-form.php?cod=$res->cod'><i class='material-icons'>edit</i></a>";
+                }    
             } 
           }
         }
